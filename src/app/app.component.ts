@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FirstProjetEsprit';
+  x=1;
+  y = 2;
+  z:Number=0;
+   constructor() { }
+
+  ngOnInit(): void {
+    this.z = this.x+this.y;
+  }
+
 }
